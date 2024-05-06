@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+class A {
+	int id;
+	String name;
+	int age;
+	double salary;
+	String degn;
+	
+	A() {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter id: ");
+		id = sc.nextInt();
+		
+		System.out.print("Enter name: ");
+		name = sc.next();
+		
+		System.out.print("Enter age: ");
+		age = sc.nextInt();
+		
+		System.out.print("Enter salary: ");
+		salary = sc.nextDouble();
+		
+		System.out.print("Enter designation: ");
+		degn = sc.next();
+
+		sc.close();
+			
+
+	}
+
+	void display(){
+		System.out.println("\n----Your Details---- \n");
+		
+		System.out.println("Your id is : " + id);
+		System.out.println("Your name is : " + name);
+		System.out.println("Your age is : " + age);
+		System.out.println("Your salary is : " + salary);
+		System.out.println("Your degn is : " + degn);
+			
+	}
+}
+class Demo3 {
+	public static void main(String args[]) {
+		System.out.println("Hello Java from Demo2 Class!");
+		A a = new A();
+		a.display();
+	}
+
+}
